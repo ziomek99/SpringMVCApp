@@ -1,13 +1,15 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+
 <html>
     <head>
-        <meta charset="utf-8">
         <title>Spring MVC Application</title>
 
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" >
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -63,10 +65,8 @@
             </c:if>
         </div>
         <br>
-        <form:form method="POST" action="uploadPage" role="form">
+        <form:form method="GET" action="files" role="form">
             <button type="submit" class="btn btn-default">Upload</button>
         </form:form>
-        <a href="FileUploadForm">Upload File</a>
-        <a href="FileUploadForm/download/zajecia.pdf">Download File</a>
     </body>
 </html>
